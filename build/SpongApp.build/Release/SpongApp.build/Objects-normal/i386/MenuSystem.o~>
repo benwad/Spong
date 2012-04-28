@@ -1,0 +1,2 @@
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/MenuSystem.cpp: In constructor 'MenuSystem::MenuSystem()':
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/MenuSystem.cpp:42: error: 'RESPONSE_QUIT' was not declared in this scope

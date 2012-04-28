@@ -1,0 +1,6 @@
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/Background.cpp: In constructor 'Background::Background(int, int)':
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/Background.cpp:29: error: 'gridY' cannot appear in a constant-expression
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/Background.cpp:30: error: expected `)' before ';' token
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/Background.cpp:30: warning: unused variable 'i'
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/Background.cpp:30: error: 'i' was not declared in this scope
+/Users/wadben/Documents/Dev/CPP/OpenGL/SpongApp/Background.cpp:30: error: expected `;' before ')' token

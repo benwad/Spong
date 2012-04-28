@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C043A4C11425285300FB769E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A4B51425285300FB769E /* main.cpp */; };
+		C043A4C21425285300FB769E /* drawText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A4B71425285300FB769E /* drawText.cpp */; };
+		C043A4C31425285300FB769E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A4B91425285300FB769E /* Player.cpp */; };
+		C043A4C41425285300FB769E /* Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A4BB1425285300FB769E /* Collidable.cpp */; };
+		C043A4C51425285300FB769E /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A4BE1425285300FB769E /* Ball.cpp */; };
+		C043A4C61425285300FB769E /* sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A4C01425285300FB769E /* sounds.cpp */; };
+		C043A5E714252AB400FB769E /* MenuSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A5E614252AB400FB769E /* MenuSystem.cpp */; };
+		C043A5EB14252AF100FB769E /* MenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C043A5EA14252AF100FB769E /* MenuItem.cpp */; };
+		C043A5FF14252B1B00FB769E /* arcade.wav in Resources */ = {isa = PBXBuildFile; fileRef = C043A5FA14252B1B00FB769E /* arcade.wav */; };
+		C043A60014252B1B00FB769E /* lazer.wav in Resources */ = {isa = PBXBuildFile; fileRef = C043A5FB14252B1B00FB769E /* lazer.wav */; };
+		C043A60114252B1B00FB769E /* powerup.wav in Resources */ = {isa = PBXBuildFile; fileRef = C043A5FC14252B1B00FB769E /* powerup.wav */; };
+		C043A60214252B1B00FB769E /* pulsegun.wav in Resources */ = {isa = PBXBuildFile; fileRef = C043A5FD14252B1B00FB769E /* pulsegun.wav */; };
+		C043A60314252B1B00FB769E /* spaceship_hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = C043A5FE14252B1B00FB769E /* spaceship_hit.wav */; };
+		C043A60514252B3E00FB769E /* depthcharge_music.wav in Resources */ = {isa = PBXBuildFile; fileRef = C043A60414252B3E00FB769E /* depthcharge_music.wav */; };
+		C043A60714252B5D00FB769E /* pauseTexture.raw in Resources */ = {isa = PBXBuildFile; fileRef = C043A60614252B5D00FB769E /* pauseTexture.raw */; };
+		C043A6DB1426320300FB769E /* SpongIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C043A6DA1426320200FB769E /* SpongIcon.icns */; };
+		C050DF341545E3610030EA58 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C050DF311545E3610030EA58 /* GLUT.framework */; };
+		C050DF351545E3610030EA58 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C050DF321545E3610030EA58 /* OpenAL.framework */; };
+		C050DF361545E3610030EA58 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C050DF331545E3610030EA58 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* SpongApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpongApp_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* SpongApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpongApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C043A4B11425283800FB769E /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		C043A4B21425283800FB769E /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		C043A4B51425285300FB769E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C043A4B61425285300FB769E /* drawText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawText.h; sourceTree = "<group>"; };
+		C043A4B71425285300FB769E /* drawText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawText.cpp; sourceTree = "<group>"; };
+		C043A4B81425285300FB769E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C043A4B91425285300FB769E /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		C043A4BA1425285300FB769E /* Collidable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collidable.h; sourceTree = "<group>"; };
+		C043A4BB1425285300FB769E /* Collidable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collidable.cpp; sourceTree = "<group>"; };
+		C043A4BC1425285300FB769E /* structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structs.h; sourceTree = "<group>"; };
+		C043A4BD1425285300FB769E /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		C043A4BE1425285300FB769E /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		C043A4BF1425285300FB769E /* sounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sounds.h; sourceTree = "<group>"; };
+		C043A4C01425285300FB769E /* sounds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sounds.cpp; sourceTree = "<group>"; };
+		C043A5E514252AB400FB769E /* MenuSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSystem.h; sourceTree = "<group>"; };
+		C043A5E614252AB400FB769E /* MenuSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuSystem.cpp; sourceTree = "<group>"; };
+		C043A5E914252AF100FB769E /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		C043A5EA14252AF100FB769E /* MenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuItem.cpp; sourceTree = "<group>"; };
+		C043A5FA14252B1B00FB769E /* arcade.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = arcade.wav; sourceTree = "<group>"; };
+		C043A5FB14252B1B00FB769E /* lazer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lazer.wav; sourceTree = "<group>"; };
+		C043A5FC14252B1B00FB769E /* powerup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = powerup.wav; sourceTree = "<group>"; };
+		C043A5FD14252B1B00FB769E /* pulsegun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pulsegun.wav; sourceTree = "<group>"; };
+		C043A5FE14252B1B00FB769E /* spaceship_hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spaceship_hit.wav; sourceTree = "<group>"; };
+		C043A60414252B3E00FB769E /* depthcharge_music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = depthcharge_music.wav; sourceTree = "<group>"; };
+		C043A60614252B5D00FB769E /* pauseTexture.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pauseTexture.raw; sourceTree = "<group>"; };
+		C043A6DA1426320200FB769E /* SpongIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SpongIcon.icns; sourceTree = "<group>"; };
+		C050DF311545E3610030EA58 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
+		C050DF321545E3610030EA58 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = ../../../../../../Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = "<group>"; };
+		C050DF331545E3610030EA58 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C050DF341545E3610030EA58 /* GLUT.framework in Frameworks */,
+				C050DF351545E3610030EA58 /* OpenAL.framework in Frameworks */,
+				C050DF361545E3610030EA58 /* OpenGL.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C043A4AE1425283800FB769E /* Menu */,
+				C043A4B81425285300FB769E /* Player.h */,
+				C043A4B91425285300FB769E /* Player.cpp */,
+				C043A4BA1425285300FB769E /* Collidable.h */,
+				C043A4BB1425285300FB769E /* Collidable.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* SpongApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SpongApp */ = {
+			isa = PBXGroup;
+			children = (
+				C050DF311545E3610030EA58 /* GLUT.framework */,
+				C050DF321545E3610030EA58 /* OpenAL.framework */,
+				C050DF331545E3610030EA58 /* OpenGL.framework */,
+				C043A6DA1426320200FB769E /* SpongIcon.icns */,
+				C043A60614252B5D00FB769E /* pauseTexture.raw */,
+				C043A5F814252B0D00FB769E /* sounds */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = SpongApp;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C043A4B51425285300FB769E /* main.cpp */,
+				C043A4B61425285300FB769E /* drawText.h */,
+				C043A4B71425285300FB769E /* drawText.cpp */,
+				C043A4BC1425285300FB769E /* structs.h */,
+				C043A4BD1425285300FB769E /* Ball.h */,
+				C043A4BE1425285300FB769E /* Ball.cpp */,
+				C043A4BF1425285300FB769E /* sounds.h */,
+				C043A4C01425285300FB769E /* sounds.cpp */,
+				32CA4F630368D1EE00C91783 /* SpongApp_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C043A4AE1425283800FB769E /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C043A5E914252AF100FB769E /* MenuItem.h */,
+				C043A5EA14252AF100FB769E /* MenuItem.cpp */,
+				C043A5E514252AB400FB769E /* MenuSystem.h */,
+				C043A5E614252AB400FB769E /* MenuSystem.cpp */,
+				C043A4B11425283800FB769E /* Menu.h */,
+				C043A4B21425283800FB769E /* Menu.cpp */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		C043A5F814252B0D00FB769E /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C043A5FA14252B1B00FB769E /* arcade.wav */,
+				C043A5FB14252B1B00FB769E /* lazer.wav */,
+				C043A60414252B3E00FB769E /* depthcharge_music.wav */,
+				C043A5FC14252B1B00FB769E /* powerup.wav */,
+				C043A5FD14252B1B00FB769E /* pulsegun.wav */,
+				C043A5FE14252B1B00FB769E /* spaceship_hit.wav */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SpongApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SpongApp" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpongApp;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SpongApp;
+			productReference = 8D1107320486CEB800E47090 /* SpongApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpongApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SpongApp */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SpongApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				C043A5FF14252B1B00FB769E /* arcade.wav in Resources */,
+				C043A60014252B1B00FB769E /* lazer.wav in Resources */,
+				C043A60114252B1B00FB769E /* powerup.wav in Resources */,
+				C043A60214252B1B00FB769E /* pulsegun.wav in Resources */,
+				C043A60314252B1B00FB769E /* spaceship_hit.wav in Resources */,
+				C043A60514252B3E00FB769E /* depthcharge_music.wav in Resources */,
+				C043A60714252B5D00FB769E /* pauseTexture.raw in Resources */,
+				C043A6DB1426320300FB769E /* SpongIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C043A4C11425285300FB769E /* main.cpp in Sources */,
+				C043A4C21425285300FB769E /* drawText.cpp in Sources */,
+				C043A4C31425285300FB769E /* Player.cpp in Sources */,
+				C043A4C41425285300FB769E /* Collidable.cpp in Sources */,
+				C043A4C51425285300FB769E /* Ball.cpp in Sources */,
+				C043A4C61425285300FB769E /* sounds.cpp in Sources */,
+				C043A5E714252AB400FB769E /* MenuSystem.cpp in Sources */,
+				C043A5EB14252AF100FB769E /* MenuItem.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpongApp_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = SpongApp;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks,
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpongApp_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = SpongApp;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SpongApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpongApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
